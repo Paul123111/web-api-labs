@@ -23,7 +23,7 @@ router.put('/:id', async (req, res) => {
       _id: req.params.id,
   }, req.body);
   if (result.matchedCount) {
-      res.status(200).json({ code:200, msg: 'Task Updated Sucessfully' });
+      res.status(200).json({ code:200, msg: 'Task Updated Successfully' });
   } else {
       res.status(404).json({ code: 404, msg: 'Unable to find Task' });
   }
